@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title> Formulário </title>
+</head>
+
+<body>
+	<style>
+		forms {
+			background-color: #0e0af5;
+		}
+
+		h1 {
+			text-align: center;
+		}
+
+		.campo {
+			margin-bottom: 2em;
+			margin-left: 1em;
+		}
+
+		fieldset {
+			border: 1;
+			margin-left: 0.1em;
+		}
+
+		body {
+			justify-content: center;
+		}
+
+		input, select, textarea, button {
+			border-radius: 10px;
+		}
+
+		.campo input:focus, .campo select:focus, .campo textarea:focus {
+			background-color: #E0E0F8;
+		}
+
+		.campo select option {
+			padding-right: 1em;
+		}
+
+		.campo input[type="text"], .campo select, .campo textarea {
+			padding: 0.2em;
+			border: 1px soled #223792;
+			box-shadow: 2px 2px 2px rgba(0,0,0,0,2);
+			margin-left: 2em;
+		}
+
+		#nome {
+			margin-left: 5em;
+		}
+
+		#endereço {
+			margin-left: 3.3em;
+		}
+
+		#complemento {
+			margin-left: 1em;
+		}
+
+		#Cidade {
+			margin-left: 1em;
+		}
+
+		.botao {
+			font-size: 1.2em;
+			background: #0e0af5;
+			border: 1;
+			margin-bottom: 1em;
+			color: #ffffff;
+			padding: 0.2em 0.6em;
+			box-shadow: 2px 2px 2px rgba(0,0,0,0,2);
+			text-shadow: 1px 1px 1px rgba(0,0,0,0,2);
+			position: absolute;
+			left: 50%;
+			margin-right: -50%;
+			transform: translate(-50%, -50%);
+		}
+
+		.botao2 {
+			font-size: 1.2em;
+			background: #0e0af5;
+			border: 1;
+			margin-bottom: 1em;
+			color: #ffffff;
+			padding: 0.2em 0.6em;
+			box-shadow: 2px 2px 2px rgba(0,0,0,0,2);
+			text-shadow: 1px 1px 1px rgba(0,0,0,0,2);
+			position: absolute;
+			left: 40%;
+			margin-right: -40%;
+			transform: translate(-50%, -50%);
+		}
+
+		.campo select option {
+			padding-right: 10em;
+		}
+
+		.cidade {
+			margin-left: 4em;
+		}
+
+		.CEP {
+			margin-left: 9.7em;
+		}
+
+		#Estado {
+			margin-left: 4.8em;
+		}
+
+		.text-input {
+			width: 300px;
+		}
+	</style>
+
+	<forms name="formularioAULA14">
+		<fieldset class="grupo">
+			<h1> <b> CADASTRO DE USUÁRIO </b> </h1>
+			<div class="campo">
+				<label for="nome"> <strong> Nome </strong> </label>
+				<input type="text" name="nome" id="nome" required>
+			</div>
+
+			<div class="campo">
+				<label for="endereço"> <strong> Endereço </strong> </label>
+				<input type="text" name="endereço" id="endereço" required>
+			</div>
+
+			<div class="campo">
+				<label for="complemento"> <strong> Complemento </strong> </label>
+				<input type="text" name="complemento" id="complemento">
+
+				<label for="Cidade"> <strong class="cidade"> Cidade </strong> </label>
+				<input type="text" id="Cidade" name="Cidade">
+			</div>
+
+			<div class="campo">
+				<label for="Estado"> <strong> Estado </strong> </label>
+				<select id="Estado">
+					<option selected disable value=""> Selecione </option>
+					<option> AL </option>
+					<option> SP </option>
+					<option> RJ </option>
+					<option> PE </option>
+					<option> RS </option>
+					<option> RN </option>
+					<option> RR </option>
+					<option> Outro </option>
+				</select>
+
+				<label for="CEP"> <strong class="CEP"> CEP </strong> </label>
+				<input type="text" id="CEP" name="CEP">
+			</div>
+
+			<div class="campo">
+				<label for="AreaInteresse"> <strong> Áreas de Interesse </strong> </label>
+				<select id="AreaInteresse">
+					<option selected disabled value=""> Selecione </option>
+					<option> Inteligência Artificial </option>
+					<option> Datawarehouse & Datamining </option>
+					<option> Programação Web </option>
+					<option> Rede de Computadores </option>
+				</select>
+			</div>
+
+			<div class="campo">
+				<label> <strong> Alguma observação </strong> </label>
+				<textarea cols="30" rows="4" stule="width: 26em" id="observacoes" name="observacoes"> </textarea>
+			</div>
+
+			<button class="botao" type="submit"> <strong> Cancelar </strong> </buttom>
+			<button class="botao2" type="submit"> <strong> Concluído </strong> </buttom>
+		</fieldset>
+	</forms>
+</body>
+
+</html>

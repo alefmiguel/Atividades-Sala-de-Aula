@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title> Layout 01 AULA 30 </title>
+</head>
+<body>
+	<style>
+		.geral {
+			display: grid;
+			border: 1px solid;
+		}
+
+		.header {
+			display: grid;
+			background-color: aqua;
+			height: 50px;
+			align-items: center;
+		}
+
+		.main-content {
+			display: grid;
+			border: 1px solid;
+			height: 200px;
+			width: 300px;
+			margin: 1px;
+			margin-top: 10px;
+			background-color: rgb(53, 184, 53);
+			justify-content: center;
+		}
+
+		.sidebar {
+			display: flex;
+			border: 1px solid;
+			margin: 1px;
+			margin-top: 10px;
+			background-color: rgb(207, 130, 203);
+			width: 100px;
+			height: 200px;
+			justify-content: center;
+		}
+
+		.twin {
+			display: grid;
+			border: 1px solid;
+			width: 200px;
+			height: 100px;
+			margin: 1px;
+			margin-bottom: 10px;
+			background: rgb(219, 165, 63);
+			justify-content: center;
+		}
+
+		.footer {
+			display: grid;
+			background-color: blue;
+			color: white;
+			height: 50px;
+			align-items: center;
+		}
+
+		.intern {
+			display: flex;
+			justify-content: center;
+		}
+
+		.parteflex {
+			display: flex;
+			justify-content: center;
+		}
+	</style>
+
+	<div class="geral">
+		<div class="header"> .header </div>
+			<div class="intern">
+				<div class="main-content"> .main-content </div>
+				<div class="sidebar"> .sidebar </div>
+			</div>
+			<div class="parteflex">
+				<div class="twin"> .twin </div>
+				<div class="twin"> .twin </div>
+			</div>
+		<div class="footer"> .footer </div>
+	</div>
+</body>
+</html>
